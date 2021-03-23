@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Download zoom video",
+  "version": "0.1.0",
+  "description": "Add download button to zoom recording and enable right click",
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["jquery-3.5.1.min.js", "content.js"],
+    "run_at": "document_end",
+    "matches": ["*://us02web.zoom.us/*"]
+  }]
+}
